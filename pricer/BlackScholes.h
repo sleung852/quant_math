@@ -5,7 +5,7 @@
 #ifndef QUANT_MATH_BLACKSCHOLES_H
 #define QUANT_MATH_BLACKSCHOLES_H
 
-#include "arm_neon.h"
+#include "../common.h"
 #include "math.h"
 #include "../math_util/stat.h"
 #include "../options/Pricable.h"

@@ -1,7 +1,7 @@
 #ifndef A55E457A_BF22_4B77_90A8_D1439A879BA0
 #define A55E457A_BF22_4B77_90A8_D1439A879BA0
 
-#include "arm_neon.h"
+#include "../common.h"
 
 class Pricable {
 protected:

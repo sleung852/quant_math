@@ -4,7 +4,7 @@
 #include "../options/PricePathIndependentPricable.h"
 #include "../model/ComputationMode.h"
 #include "GeometricBrownianMotionPricer.h"
-#include "arm_neon.h"
+#include "../common.h"
 
 class MonteCarloPricer {
 private:

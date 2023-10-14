@@ -8,7 +8,7 @@
 #include <concepts>
 #include <vector>
 #include <cmath>
-#include <arm_neon.h> // https://arm-software.github.io/acle/neon_intrinsics/advsimd.html
+#include "../common.h" // https://arm-software.github.io/acle/neon_intrinsics/advsimd.html
 
 //template <typename T>
 //concept numeric = std::floating_point<T> or std::integral<T>;
