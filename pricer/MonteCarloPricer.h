@@ -57,15 +57,7 @@ private:
     }
 
     float32_t price_gpu(PricePathIndependentPricable& pricable, GeometricBrownianMotionPricer& pricer, bool direction=true) const {
-        float32_t mean = 0.0;
-        float32_t toDate = pricable.getExpiryTime();
-        for (size_t i = 0; i < nScenarios; i++) {
-            std::vector<float32_t> paths = pricer.generateRiskNeutralPricePath(toDate, nSteps, direction);
-            float32_t price = paths.back();
-            float32_t payoff = pricable.payoff(price);
-            mean += payoff/nScenarios;
-        }
-        return exp(-riskFreeRate*toDate)*mean;
+        // TODO: integrate
     }
 
 
